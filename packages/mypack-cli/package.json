@@ -1,0 +1,29 @@
+{
+  "bin": {
+    "mypack": "./bin/cli.js"
+  },
+  "name": "mypack-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mypack": "workspace:*",
+    "mypack-dev-server": "workspace:*"
+  },
+  "peerDependencies": {
+    "mypack": "workspace:*",
+    "mypack-dev-server": "workspace:*"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "commander": "^9.2.0",
+    "lodash": "^4.17.21",
+    "react-dev-utils": "^12.0.1"
+  }
+}
