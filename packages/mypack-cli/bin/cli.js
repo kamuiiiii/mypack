@@ -25,7 +25,7 @@ const build = async (options) => {
 
 const watch = (server) => {
   const sourceDir = path.resolve("src");
-  const wacther = chokidar.watch(sourceDir);
+  const watcher = chokidar.watch(sourceDir);
   const handle = throttle(
     async (path) => {
       const chunk_id = path.split(/\/(src\/.*)/)[1];
@@ -42,7 +42,7 @@ const watch = (server) => {
     1000,
     { leading: true, trailing: false }
   );
-  wacther.on("change", handle);
+  watcher.on("change", handle);
 };
 
 program
